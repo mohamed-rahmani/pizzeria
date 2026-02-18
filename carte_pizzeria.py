@@ -4,7 +4,7 @@ from carte_pizzeria_exception import CartePizzeriaException
 class CartePizzeria:
     def __init__(self, pizzas: list[Pizza]):
         self.pizzas = []
-        if type(pizzas) == Pizza:
+        if isinstance(pizzas, Pizza):
             self.pizzas.append(pizzas)
         else:
             for pizza in pizzas:
